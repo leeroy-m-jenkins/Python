@@ -4,7 +4,7 @@ import requests
 import time
 import sys
 
-api_token = "u68d4602450934e_70fb7a7ad5f133fb21111c96a9ca01d34f2655142cd072d5ecd41c3e4e801d7d"
+api_token = ""
 api_url = "https://api.spur.us/v2/context/"
 selected_headers = ['IP','Country','State','Organization','Type','Operator','Anonymous','Infrastructure']
 
@@ -53,9 +53,9 @@ def clean_json(j):
 			return res_num,res
 
 ### change these ###
-ip_file_path = 'D:\\Cases\\2022\\KISS\\okta_ips.csv'
-raw_out_path = 'D:\\Cases\\2022\\KISS\\raw_out.csv'
-parsed_out_path = 'D:\\Cases\\2022\\KISS\\ip_whois_parsed.csv'
+ip_file_path = 'ips.csv'
+raw_out_path = 'raw_out.csv'
+parsed_out_path = 'ip_whois_parsed.csv'
 ### ############ ###
 
 rp = open(raw_out_path,'w', newline='', encoding='utf-8')
